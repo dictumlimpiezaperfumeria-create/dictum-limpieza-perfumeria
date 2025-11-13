@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --color-primary: #4fc3f7; /* Celeste */
-            --color-secondary: #80cbc4; /* Verde menta */
-            --color-accent: #42a5f5; /* Azul pastel */
+            --color-primary: #4fc3f7;
+            --color-secondary: #80cbc4;
+            --color-accent: #42a5f5;
             --color-light: #f8f9fa;
             --color-dark: #333333;
             --color-white: #ffffff;
@@ -39,7 +39,6 @@
             padding: 0 15px;
         }
 
-        /* Header */
         header {
             background-color: var(--color-white);
             box-shadow: var(--shadow);
@@ -119,7 +118,6 @@
             cursor: pointer;
         }
 
-        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 100%);
             color: var(--color-white);
@@ -156,7 +154,6 @@
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
 
-        /* Sections */
         section {
             padding: 80px 0;
         }
@@ -185,7 +182,6 @@
             background-color: var(--color-primary);
         }
 
-        /* About */
         .about-content {
             display: flex;
             align-items: center;
@@ -220,7 +216,6 @@
             transform: scale(1.05);
         }
 
-        /* Products */
         .categories {
             display: flex;
             justify-content: center;
@@ -312,7 +307,6 @@
             font-size: 1.1rem;
         }
 
-        /* Promotions */
         .promotions {
             background-color: var(--color-secondary);
             color: var(--color-white);
@@ -367,7 +361,6 @@
             font-size: 1.2rem;
         }
 
-        /* Testimonials */
         .testimonials-container {
             max-width: 800px;
             margin: 0 auto;
@@ -489,7 +482,6 @@
             background-color: var(--color-accent);
         }
 
-        /* Contact */
         .contact-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -562,7 +554,6 @@
             text-align: center;
         }
 
-        /* Footer */
         footer {
             background-color: var(--color-dark);
             color: var(--color-white);
@@ -620,7 +611,6 @@
             color: #ccc;
         }
 
-        /* Responsive */
         @media (max-width: 992px) {
             .about-content {
                 flex-direction: column;
@@ -697,7 +687,6 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container header-container">
             <div class="logo">
@@ -724,7 +713,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="inicio">
         <div class="container">
             <h1>Productos que cuidan tu hogar y a los que más querés</h1>
@@ -733,7 +721,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="nosotros">
         <div class="container">
             <div class="section-title">
@@ -754,7 +741,6 @@
         </div>
     </section>
 
-    <!-- Products Section -->
     <section id="productos">
         <div class="container">
             <div class="section-title">
@@ -770,7 +756,6 @@
             </div>
             
             <div class="products-grid">
-                <!-- Product 1 -->
                 <div class="product-card" data-category="limpieza">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Detergente líquido">
@@ -783,7 +768,6 @@
                     </div>
                 </div>
                 
-                <!-- Product 2 -->
                 <div class="product-card" data-category="perfumeria">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1541643600914-78b084683601?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Perfume ambiente">
@@ -796,7 +780,6 @@
                     </div>
                 </div>
                 
-                <!-- Product 3 -->
                 <div class="product-card" data-category="cuidado">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Jabón líquido">
@@ -809,7 +792,6 @@
                     </div>
                 </div>
                 
-                <!-- Product 4 -->
                 <div class="product-card" data-category="aromatizantes">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1611934180042-da79110541b6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Difusor aromático">
@@ -822,7 +804,6 @@
                     </div>
                 </div>
                 
-                <!-- Product 5 -->
                 <div class="product-card" data-category="limpieza">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Suavizante de ropa">
@@ -835,7 +816,6 @@
                     </div>
                 </div>
                 
-                <!-- Product 6 -->
                 <div class="product-card" data-category="perfumeria">
                     <div class="product-image">
                         <img src="https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Desodorante ambiental">
@@ -851,7 +831,6 @@
         </div>
     </section>
 
-    <!-- Promotions Section -->
     <section class="promotions" id="promociones">
         <div class="container">
             <div class="section-title">
@@ -859,7 +838,6 @@
             </div>
             
             <div class="promo-cards">
-                <!-- Promotion 1 -->
                 <div class="promo-card">
                     <div class="promo-header">
                         <h3>Combo Limpieza Completa</h3>
@@ -871,7 +849,6 @@
                     </div>
                 </div>
                 
-                <!-- Promotion 2 -->
                 <div class="promo-card">
                     <div class="promo-header">
                         <h3>Combo Aromas del Hogar</h3>
@@ -883,7 +860,6 @@
                     </div>
                 </div>
                 
-                <!-- Promotion 3 -->
                 <div class="promo-card">
                     <div class="promo-header">
                         <h3>Combo Cuidado Personal</h3>
@@ -898,7 +874,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section id="testimonios">
         <div class="container">
             <div class="section-title">
@@ -906,7 +881,6 @@
             </div>
             
             <div class="testimonials-container">
-                <!-- Testimonial 1 -->
                 <div class="testimonial-card">
                     <p class="testimonial-text">Los productos de Dictum son excelentes. El detergente líquido quita toda la grasa y el suavizante deja la ropa con un aroma delicioso. Además, el trato es muy personalizado y amable.</p>
                     <div class="testimonial-author">
@@ -918,7 +892,6 @@
                     </div>
                 </div>
                 
-                <!-- Testimonial 2 -->
                 <div class="testimonial-card">
                     <p class="testimonial-text">Compro regularmente los aromatizantes para mi negocio. La calidad es superior a otros productos del mercado y los precios son muy accesibles. ¡Altamente recomendados!</p>
                     <div class="testimonial-author">
@@ -931,7 +904,6 @@
                 </div>
             </div>
             
-            <!-- Testimonial Form -->
             <div class="testimonial-form">
                 <h3>¿Querés compartir tu experiencia?</h3>
                 <form id="testimonialForm">
@@ -953,7 +925,6 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contacto">
         <div class="container">
             <div class="section-title">
@@ -1004,8 +975,7 @@
                             <p>Seguinos en nuestras redes</p>
                             <div class="social-links">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i>
-/a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
                                 <a href="#"><i class="fab fa-tiktok"></i></a>
                             </div>
                         </div>
@@ -1023,4 +993,92 @@
                             <label for="contactEmail">Email</label>
                             <input type="email" id="contactEmail" class="form-control" required>
                         </div>
-                        <div class
+                        <div class="form-group">
+                            <label for="contactMessage">Mensaje</label>
+                            <textarea id="contactMessage" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Dictum Limpieza</h3>
+                    <p>Productos de limpieza y perfumería de calidad para tu hogar y cuidado personal.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#productos">Productos</a></li>
+                        <li><a href="#promociones">Promociones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://wa.me/543834123456"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+                        <li><a href="mailto:info@dictumlimpieza.com"><i class="fas fa-envelope"></i> Email</a></li>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Gracias por confiar en la limpieza artesanal 💧✨</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu').addEventListener('click', function() {
+            document.querySelector('nav').classList.toggle('active');
+        });
+
+        // Product filtering
+        document.querySelectorAll('.category-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.category-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                // Filter products
+                const category = this.getAttribute('data-category');
+                const products = document.querySelectorAll('.product-card');
+                
+                products.forEach(product => {
+                    if (category === 'all' || product.getAttribute('data-category') === category) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Form submissions (basic)
+        document.getElementById('testimonialForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu testimonio! Lo revisaremos pronto.');
+            this.reset();
+        });
+
+        document.getElementById('contactForm')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Mensaje enviado! Te contactaremos pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
