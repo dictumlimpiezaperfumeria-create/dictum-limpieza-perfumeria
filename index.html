@@ -78,6 +78,13 @@
             color: var(--color-primary);
         }
 
+        /* Estilo para el aerosol en el logo */
+        .aerosol-icon {
+            font-size: 2rem;
+            color: var(--color-primary);
+            margin-right: 10px;
+        }
+
         nav ul {
             display: flex;
             list-style: none;
@@ -753,6 +760,10 @@
             .logo-text {
                 font-size: 1.2rem;
             }
+            
+            .aerosol-icon {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
@@ -762,7 +773,9 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <img src="logo-dictum.png" alt="Dictum Limpieza" class="logo-img">
+                <!-- Aerosol agregado antes del logo -->
+                <i class="fas fa-spray-can aerosol-icon"></i>
+                <img src="logo-favicon.png" alt="Dictum Limpieza" class="logo-img">
                 <div class="logo-text">Dictum <span>Limpieza</span></div>
             </div>
             
@@ -805,7 +818,8 @@
                     <p>Nuestro compromiso es brindar soluciones efectivas para la limpieza del hogar, aromatización de ambientes y cuidado personal, siempre con el mejor servicio y asesoramiento.</p>
                 </div>
                 <div class="about-image">
-                    <img src="logo-dictum.png" alt="Dictum Limpieza">
+                    <!-- Usando logo-favicon.png que ya existe en tu repositorio -->
+                    <img src="logo-favicon.png" alt="Dictum Limpieza">
                 </div>
             </div>
         </div>
