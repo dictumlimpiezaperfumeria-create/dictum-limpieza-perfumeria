@@ -7,21 +7,21 @@
     <meta name="google-site-verification" content="F8afRuc1cHF1sPvgUsci7IupBV6B40Zhehvl4xD9AHA" />
     <meta name="description" content="Dictum Limpieza y Perfumería: productos de limpieza, perfumería, aromatizantes, jabones y artículos de higiene para el hogar y uso personal en San Fernando del Valle de Catamarca">
     <!-- FAVICON PARA TODOS LOS DISPOSITIVOS -->
-<link rel="icon" type="image/png" href="logo-favicon.png">
-<link rel="apple-touch-icon" href="logo-favicon.png">
-<link rel="shortcut icon" href="logo-favicon.png">
+    <link rel="icon" type="image/png" href="logo-favicon.png">
+    <link rel="apple-touch-icon" href="logo-favicon.png">
+    <link rel="shortcut icon" href="logo-favicon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-    --color-primary: #ce5da4;    /* ROSADO principal */
-    --color-secondary: #60d1b9;  /* VERDE menta */
-    --color-accent: #f8d927;     /* AMARILLO (uso limitado) */
-    --color-light: #e5e8ed;      /* FONDO BLANCO/GRIS CLARO */
-    --color-dark: #333333;       /* Texto oscuro */
-    --color-white: #ffffff;      /* Blanco puro */
-    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition: all 0.3s ease;
-}
+            --color-primary: #ce5da4;    /* ROSADO principal */
+            --color-secondary: #60d1b9;  /* VERDE menta */
+            --color-accent: #f8d927;     /* AMARILLO (uso limitado) */
+            --color-light: #e5e8ed;      /* FONDO BLANCO/GRIS CLARO */
+            --color-dark: #333333;       /* Texto oscuro */
+            --color-white: #ffffff;      /* Blanco puro */
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
 
         * {
             margin: 0;
@@ -266,6 +266,10 @@
         .product-image {
             height: 200px;
             overflow: hidden;
+            background: linear-gradient(135deg, var(--color-light) 0%, var(--color-secondary) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .product-image img {
@@ -273,6 +277,12 @@
             height: 100%;
             object-fit: cover;
             transition: var(--transition);
+        }
+
+        .product-image .placeholder-icon {
+            font-size: 3rem;
+            color: var(--color-primary);
+            opacity: 0.7;
         }
 
         .product-card:hover .product-image img {
@@ -538,6 +548,7 @@
             color: var(--color-white);
             border-radius: 50%;
             transition: var(--transition);
+            text-decoration: none;
         }
 
         .social-links a:hover {
@@ -710,7 +721,7 @@
                     <li><a href="#nosotros">Nosotros</a></li>
                     <li><a href="#productos">Productos</a></li>
                     <li><a href="#promociones">Promociones</a></li>
-                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#testimonios">Opiniones</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -753,82 +764,530 @@
             
             <div class="categories">
                 <button class="category-btn active" data-category="all">Todos</button>
+                <button class="category-btn" data-category="ropa">Ropa</button>
                 <button class="category-btn" data-category="limpieza">Limpieza del Hogar</button>
-                <button class="category-btn" data-category="perfumeria">Perfumería</button>
-                <button class="category-btn" data-category="cuidado">Cuidado Personal</button>
-                <button class="category-btn" data-category="aromatizantes">Aromatizantes</button>
+                <button class="category-btn" data-category="higiene">Higiene Personal</button>
+                <button class="category-btn" data-category="saphirus">Productos Saphirus</button>
             </div>
             
             <div class="products-grid">
+                <!-- PRODUCTOS DE ROPA -->
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Jabones</span>
+                        <h3 class="product-name">Jabón líquido ARIEL</h3>
+                        <p class="product-description">Jabón líquido para ropa de alta calidad.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Jabones</span>
+                        <h3 class="product-name">Jabón líquido SKIP</h3>
+                        <p class="product-description">Jabón líquido para ropa con tecnología avanzada.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Jabones</span>
+                        <h3 class="product-name">Jabón líquido ALA con suavizante</h3>
+                        <p class="product-description">Jabón líquido con suavizante incorporado.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Jabones</span>
+                        <h3 class="product-name">Jabón en polvo Granby</h3>
+                        <p class="product-description">Jabón en polvo tradicional.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Jabones</span>
+                        <h3 class="product-name">Jabón en polvo Ala</h3>
+                        <p class="product-description">Jabón en polvo de calidad premium.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Suavizantes</span>
+                        <h3 class="product-name">Suavizante Celeste</h3>
+                        <p class="product-description">Suavizante con fragancia fresca.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Suavizantes</span>
+                        <h3 class="product-name">Suavizante Amarillo</h3>
+                        <p class="product-description">Suavizante con aroma intenso.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Suavizantes</span>
+                        <h3 class="product-name">Suavizante Rosado</h3>
+                        <p class="product-description">Suavizante con fragancia floral.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Suavizantes</span>
+                        <h3 class="product-name">Suavizante Borita</h3>
+                        <p class="product-description">Suavizante tradicional de calidad.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-palette"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Lavandinas</span>
+                        <h3 class="product-name">Lavandina ropa color</h3>
+                        <p class="product-description">Lavandina especial para ropa de color.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-palette"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Lavandinas</span>
+                        <h3 class="product-name">Lavandina ropa blanca</h3>
+                        <p class="product-description">Lavandina para ropa blanca.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-cloud"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa</span>
+                        <h3 class="product-name">Camellito</h3>
+                        <p class="product-description">Producto para suavizar y perfumar la ropa.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <!-- LIMPIEZA DEL HOGAR -->
                 <div class="product-card" data-category="limpieza">
                     <div class="product-image">
-                        <img src="images/detergente-liquido.jpg" alt="Detergente Líquido Concentrado">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
                     </div>
                     <div class="product-info">
                         <span class="product-category">Limpieza del Hogar</span>
-                        <h3 class="product-name">Detergente Líquido Concentrado</h3>
-                        <p class="product-description">Elimina la grasa y desinfecta sin dañar tus utensilios. Ideal para vajilla y superficies.</p>
-                        <div class="product-price">$850</div>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-category="perfumeria">
-                    <div class="product-image">
-                        <img src="images/perfume-ambiental.jpg" alt="Perfume Ambiental Lavanda">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Perfumería</span>
-                        <h3 class="product-name">Perfume Ambiental Lavanda</h3>
-                        <p class="product-description">Aromatiza tus espacios con la frescura de la lavanda. Duradero y de agradable fragancia.</p>
-                        <div class="product-price">$1.200</div>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-category="cuidado">
-                    <div class="product-image">
-                        <img src="images/jabon-antibacterial.jpg" alt="Jabón Líquido Antibacterial">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Cuidado Personal</span>
-                        <h3 class="product-name">Jabón Líquido Antibacterial</h3>
-                        <p class="product-description">Suave con la piel, elimina el 99.9% de bacterias. Fragancia suave y fresca.</p>
-                        <div class="product-price">$950</div>
-                    </div>
-                </div>
-                
-                <div class="product-card" data-category="aromatizantes">
-                    <div class="product-image">
-                        <img src="images/difusor-citrico.jpg" alt="Difusor Aromático Cítrico">
-                    </div>
-                    <div class="product-info">
-                        <span class="product-category">Aromatizantes</span>
-                        <h3 class="product-name">Difusor Aromático Cítrico</h3>
-                        <p class="product-description">Perfuma tus ambientes con notas cítricas revitalizantes. Hasta 60 días de duración.</p>
-                        <div class="product-price">$1.500</div>
+                        <h3 class="product-name">Lavandina</h3>
+                        <p class="product-description">Lavandina concentrada para desinfección.</p>
+                        <div class="product-price">Consultar precio</div>
                     </div>
                 </div>
                 
                 <div class="product-card" data-category="limpieza">
                     <div class="product-image">
-                        <img src="images/suavizante-ropa.jpg" alt="Suavizante para Ropa">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
                     </div>
                     <div class="product-info">
                         <span class="product-category">Limpieza del Hogar</span>
-                        <h3 class="product-name">Suavizante para Ropa Flores Silvestres</h3>
-                        <p class="product-description">Deja tu ropa suave y con un aroma fresco y duradero a flores silvestres.</p>
-                        <div class="product-price">$780</div>
+                        <h3 class="product-name">Cloro</h3>
+                        <p class="product-description">Cloro para limpieza y desinfección.</p>
+                        <div class="product-price">Consultar precio</div>
                     </div>
                 </div>
                 
-                <div class="product-card" data-category="perfumeria">
+                <div class="product-card" data-category="limpieza">
                     <div class="product-image">
-                        <img src="images/desodorante-ambiental.jpg" alt="Desodorante Ambiental">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
                     </div>
                     <div class="product-info">
-                        <span class="product-category">Perfumería</span>
-                        <h3 class="product-name">Desodorante Ambiental Bambú</h3>
-                        <p class="product-description">Neutraliza olores y perfuma con la frescura del bambú. Ideal para baños y cocinas.</p>
-                        <div class="product-price">$890</div>
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Perfume para piso Softy</h3>
+                        <p class="product-description">Perfume para pisos con fragancia suave.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Perfume para piso Pino</h3>
+                        <p class="product-description">Perfume para pisos con aroma a pino.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Perfume para piso Lavanda</h3>
+                        <p class="product-description">Perfume para pisos con fragancia lavanda.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Perfume para piso Lysoform</h3>
+                        <p class="product-description">Perfume para pisos con desinfectante.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Perfume para piso Citronella</h3>
+                        <p class="product-description">Perfume para pisos con aroma cítrico.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-bug"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Veneno</h3>
+                        <p class="product-description">Insecticida para control de plagas.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-broom"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Creolina</h3>
+                        <p class="product-description">Desinfectante y desodorante ambiental.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-broom"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Lampazo Base Gasoil</h3>
+                        <p class="product-description">Lampazo de calidad profesional.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-broom"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Lampazo Siliconado</h3>
+                        <p class="product-description">Lampazo con tratamiento siliconado.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-window-restore"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Limpia Vidrios</h3>
+                        <p class="product-description">Producto para limpieza de vidrios y superficies.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Secador</h3>
+                        <p class="product-description">Secador de piso de calidad.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-broom"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Escoba</h3>
+                        <p class="product-description">Escoba para limpieza general.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-broom"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Cabo</h3>
+                        <p class="product-description">Cabos para herramientas de limpieza.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Trapos</h3>
+                        <p class="product-description">Trapos de limpieza de diferentes tipos.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Paños</h3>
+                        <p class="product-description">Paños de microfibra para limpieza.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-soap"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Detergente</h3>
+                        <p class="product-description">Detergente para vajilla y limpieza.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-soap"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Desengrasante</h3>
+                        <p class="product-description">Desengrasante potente para cocina.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-toilet-paper"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Papel Servilleta</h3>
+                        <p class="product-description">Servilletas de papel de diferentes tamaños.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-toilet-paper"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Papel Higienico</h3>
+                        <p class="product-description">Papel higiénico de diferentes calidades.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-paperclip"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Broches</h3>
+                        <p class="product-description">Broches para tender la ropa.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-pump-soap"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">CIF crema</h3>
+                        <p class="product-description">Crema limpiadora para superficies.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-faucet"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Quita Sarro</h3>
+                        <p class="product-description">Producto para eliminar sarro en baños y cocinas.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-fire"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Sahumerios</h3>
+                        <p class="product-description">Sahumerios de diferentes aromas.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <!-- HIGIENE PERSONAL -->
+                <div class="product-card" data-category="higiene">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-pump-soap"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Higiene Personal</span>
+                        <h3 class="product-name">Shampoo SEDAL</h3>
+                        <p class="product-description">Shampoo para el cuidado del cabello.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="higiene">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-pump-soap"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Higiene Personal</span>
+                        <h3 class="product-name">Acondicionador SEDAL</h3>
+                        <p class="product-description">Acondicionador para cabello suave y manejable.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="higiene">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tooth"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Higiene Personal</span>
+                        <h3 class="product-name">Pasta dental</h3>
+                        <p class="product-description">Pasta dental de diferentes marcas.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <!-- PRODUCTOS SAPHIRUS -->
+                <div class="product-card" data-category="saphirus">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Productos Saphirus</span>
+                        <h3 class="product-name">Aromatizante textil AMBAR</h3>
+                        <p class="product-description">Aromatizante para textiles con fragancia ámbar.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="saphirus">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Productos Saphirus</span>
+                        <h3 class="product-name">Aerosol AMBAR</h3>
+                        <p class="product-description">Aerosol ambientador con fragancia ámbar.</p>
+                        <div class="product-price">Consultar precio</div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="saphirus">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-fire"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Productos Saphirus</span>
+                        <h3 class="product-name">Sahumerios Saphirus</h3>
+                        <p class="product-description">Sahumerios de alta calidad con diferentes aromas.</p>
+                        <div class="product-price">Consultar precio</div>
                     </div>
                 </div>
             </div>
@@ -838,40 +1297,40 @@
     <section class="promotions" id="promociones">
         <div class="container">
             <div class="section-title">
-                <h2>Promociones y Combos</h2>
+                <h2>Ofertas Especiales</h2>
             </div>
             
             <div class="promo-cards">
                 <div class="promo-card">
                     <div class="promo-header">
-                        <h3>Combo Limpieza Completa</h3>
+                        <h3>OFERTA JABÓN ARIEL</h3>
                     </div>
                     <div class="promo-body">
-                        <h4 class="promo-title">Kit Hogar Limpio</h4>
-                        <p class="promo-description">Incluye detergente, lavandina, suavizante y limpiador multiuso. Todo lo necesario para mantener tu hogar impecable.</p>
-                        <div class="promo-price">$3.200 <span style="text-decoration: line-through; color: #999; font-size: 0.9rem;">$3.800</span></div>
+                        <h4 class="promo-title">5 LITROS DE JABÓN ARIEL</h4>
+                        <p class="promo-description">Jabón líquido Ariel de 5 litros. Calidad premium para tu ropa.</p>
+                        <div class="promo-price">$7.500</div>
                     </div>
                 </div>
                 
                 <div class="promo-card">
                     <div class="promo-header">
-                        <h3>Combo Aromas del Hogar</h3>
+                        <h3>OFERTA JABÓN SKIP</h3>
                     </div>
                     <div class="promo-body">
-                        <h4 class="promo-title">Pack Aromatización</h4>
-                        <p class="promo-description">Dos perfumes ambientales y un difusor aromático a elección. Llena tu hogar de fragancias agradables.</p>
-                        <div class="promo-price">$2.900 <span style="text-decoration: line-through; color: #999; font-size: 0.9rem;">$3.500</span></div>
+                        <h4 class="promo-title">5 LITROS DE JABÓN SKIP</h4>
+                        <p class="promo-description">Jabón líquido Skip de 5 litros. Tecnología avanzada de limpieza.</p>
+                        <div class="promo-price">$6.500</div>
                     </div>
                 </div>
                 
                 <div class="promo-card">
                     <div class="promo-header">
-                        <h3>Combo Cuidado Personal</h3>
+                        <h3>OFERTA JABÓN ALA</h3>
                     </div>
                     <div class="promo-body">
-                        <h4 class="promo-title">Kit Higiene Familiar</h4>
-                        <p class="promo-description">Jabón líquido, shampoo y crema de enjuague. Productos suaves y efectivos para toda la familia.</p>
-                        <div class="promo-price">$2.500 <span style="text-decoration: line-through; color: #999; font-size: 0.9rem;">$3.000</span></div>
+                        <h4 class="promo-title">5 LITROS DE JABÓN ALA</h4>
+                        <p class="promo-description">Jabón líquido Ala de 5 litros con suavizante incorporado.</p>
+                        <div class="promo-price">$5.500</div>
                     </div>
                 </div>
             </div>
@@ -881,49 +1340,36 @@
     <section id="testimonios">
         <div class="container">
             <div class="section-title">
-                <h2>Testimonios de Clientes</h2>
+                <h2>Opiniones de Clientes</h2>
             </div>
             
-            <div class="testimonials-container">
+            <div id="testimonials-list" class="testimonials-container">
+                <!-- Las opiniones se cargarán aquí dinámicamente -->
                 <div class="testimonial-card">
-                    <p class="testimonial-text">Los productos de Dictum son excelentes. El detergente líquido quita toda la grasa y el suavizante deja la ropa con un aroma delicioso. Además, el trato es muy personalizado y amable.</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">M</div>
-                        <div class="author-info">
-                            <h4>María González</h4>
-                            <p>Cliente desde 2021</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <p class="testimonial-text">Compro regularmente los aromatizantes para mi negocio. La calidad es superior a otros productos del mercado y los precios son muy accesibles. ¡Altamente recomendados!</p>
+                    <p class="testimonial-text">Excelentes productos y atención. Siempre encuentro lo que necesito para mi hogar.</p>
                     <div class="testimonial-author">
                         <div class="author-avatar">C</div>
                         <div class="author-info">
-                            <h4>Carlos Rodríguez</h4>
-                            <p>Dueño de cafetería</p>
+                            <h4>Cliente Satisfecho</h4>
+                            <p>Cliente frecuente</p>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="testimonial-form">
-                <h3>¿Querés compartir tu experiencia?</h3>
+                <h3>¡Compartí tu experiencia con nosotros!</h3>
                 <form id="testimonialForm">
                     <div class="form-group">
-                        <label for="name">Nombre</label>
-                        <input type="text" id="name" class="form-control" required>
+                        <label for="name">Tu nombre (opcional)</label>
+                        <input type="text" id="name" class="form-control" placeholder="Podés usar tu nombre o un seudónimo">
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" class="form-control" required>
+                        <label for="testimonial">Tu opinión *</label>
+                        <textarea id="testimonial" class="form-control" required placeholder="Contanos tu experiencia con nuestros productos..."></textarea>
                     </div>
-                    <div class="form-group">
-                        <label for="testimonial">Tu testimonio</label>
-                        <textarea id="testimonial" class="form-control" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Enviar Testimonio</button>
+                    <button type="submit" class="btn-submit">Publicar Opinión</button>
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.9rem; color: #666;">Tu opinión será publicada en esta página para ayudar a otros clientes</p>
                 </form>
             </div>
         </div>
@@ -932,7 +1378,7 @@
     <section id="contacto">
         <div class="container">
             <div class="section-title">
-                <h2>Pedidos y Contacto</h2>
+                <h2>Contacto y Pedidos</h2>
             </div>
             
             <div class="contact-container">
@@ -949,12 +1395,12 @@
                     
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-phone-alt"></i>
+                            <i class="fab fa-whatsapp"></i>
                         </div>
                         <div class="contact-details">
-                            <h3>Teléfono / WhatsApp</h3>
-                            <p>+54 3834 123456</p>
-                            <a href="https://wa.me/543834123456" class="btn" style="margin-top: 10px; padding: 8px 20px; font-size: 0.9rem;">
+                            <h3>WhatsApp</h3>
+                            <p>3834-317752</p>
+                            <a href="https://wa.me/543834317752" class="btn" style="margin-top: 10px; padding: 8px 20px; font-size: 0.9rem;">
                                 <i class="fab fa-whatsapp"></i> Escribinos por WhatsApp
                             </a>
                         </div>
@@ -962,26 +1408,27 @@
                     
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
+                            <i class="fab fa-instagram"></i>
                         </div>
                         <div class="contact-details">
-                            <h3>Email</h3>
-                            <p>info@dictumlimpieza.com</p>
+                            <h3>Instagram</h3>
+                            <p>@dictum_limpieza_perfumeria</p>
+                            <div class="social-links">
+                                <a href="https://instagram.com/dictum_limpieza_perfumeria" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <i class="fas fa-share-alt"></i>
+                            <i class="fas fa-clock"></i>
                         </div>
                         <div class="contact-details">
-                            <h3>Redes Sociales</h3>
-                            <p>Seguinos en nuestras redes</p>
-                            <div class="social-links">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-instagram"></i></a>
-                                <a href="#"><i class="fab fa-tiktok"></i></a>
-                            </div>
+                            <h3>Horarios de Atención</h3>
+                            <p>Lunes a Viernes: 8:00 - 13:00 y 16:00 - 20:00</p>
+                            <p>Sábados: 8:00 - 13:00</p>
                         </div>
                     </div>
                 </div>
@@ -994,14 +1441,14 @@
                             <input type="text" id="contactName" class="form-control" required>
                         </div>
                         <div class="form-group">
-                            <label for="contactEmail">Email</label>
-                            <input type="email" id="contactEmail" class="form-control" required>
+                            <label for="contactPhone">Teléfono</label>
+                            <input type="tel" id="contactPhone" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="contactMessage">Mensaje</label>
-                            <textarea id="contactMessage" class="form-control" required></textarea>
+                            <textarea id="contactMessage" class="form-control" required placeholder="¿Qué productos te interesan?"></textarea>
                         </div>
-                        <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                        <button type="submit" class="btn-submit">Enviar Consulta</button>
                     </form>
                 </div>
             </div>
@@ -1021,16 +1468,14 @@
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#nosotros">Nosotros</a></li>
                         <li><a href="#productos">Productos</a></li>
-                        <li><a href="#promociones">Promociones</a></li>
+                        <li><a href="#promociones">Ofertas</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contacto</h3>
                     <ul class="footer-links">
-                        <li><a href="https://wa.me/543834123456"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
-                        <li><a href="mailto:info@dictumlimpieza.com"><i class="fas fa-envelope"></i> Email</a></li>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
-                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://wa.me/543834317752"><i class="fab fa-whatsapp"></i> WhatsApp: 3834-317752</a></li>
+                        <li><a href="https://instagram.com/dictum_limpieza_perfumeria" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
                     </ul>
                 </div>
             </div>
@@ -1055,4 +1500,94 @@
                 });
                 
                 // Add active class to clicked button
-                this
+                this.classList.add('active');
+                
+                // Filter products
+                const category = this.getAttribute('data-category');
+                const products = document.querySelectorAll('.product-card');
+                
+                products.forEach(product => {
+                    if (category === 'all' || product.getAttribute('data-category') === category) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Testimonial form submission
+        document.getElementById('testimonialForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value || 'Cliente Satisfecho';
+            const testimonial = document.getElementById('testimonial').value;
+            
+            if (testimonial.trim() === '') {
+                alert('Por favor, escribí tu opinión antes de enviar.');
+                return;
+            }
+            
+            // Create new testimonial card
+            const testimonialsContainer = document.getElementById('testimonials-list');
+            const newTestimonial = document.createElement('div');
+            newTestimonial.className = 'testimonial-card';
+            newTestimonial.innerHTML = `
+                <p class="testimonial-text">${testimonial}</p>
+                <div class="testimonial-author">
+                    <div class="author-avatar">${name.charAt(0).toUpperCase()}</div>
+                    <div class="author-info">
+                        <h4>${name}</h4>
+                        <p>Cliente reciente</p>
+                    </div>
+                </div>
+            `;
+            
+            // Add new testimonial at the beginning
+            testimonialsContainer.insertBefore(newTestimonial, testimonialsContainer.firstChild);
+            
+            // Show success message
+            alert('¡Gracias por tu opinión! Ya fue publicada en nuestra página.');
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const phone = document.getElementById('contactPhone').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            // Simulate form submission
+            alert(`¡Gracias ${name}! Tu consulta fue enviada. Te contactaremos pronto al ${phone}.`);
+            
+            // Reset form
+            this.reset();
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    document.querySelector('nav').classList.remove('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
