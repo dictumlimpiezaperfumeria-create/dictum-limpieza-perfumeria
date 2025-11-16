@@ -1,0 +1,33 @@
+{
+  "name": "Dictum Limpieza y Perfumería",
+  "short_name": "Dictum Limpieza",
+  "description": "Productos de limpieza, perfumería y aromatizantes en Catamarca",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ce5da4",
+  "orientation": "portrait",
+  "categories": ["shopping", "business"],
+  "icons": [
+    {
+      "src": "logo-favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo-favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "logo-favicon.png",
+      "sizes": "640x320",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+}
