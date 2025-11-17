@@ -213,48 +213,6 @@
             background-color: var(--color-primary);
         }
 
-        /* Estilos para la sección de videos */
-        .videos-section {
-            background-color: var(--color-white);
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            overflow: hidden;
-            margin-bottom: 30px;
-        }
-
-        .video-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* Relación de aspecto 16:9 */
-            background-color: #000;
-        }
-
-        .video-container video {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .video-info {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .video-info h3 {
-            color: var(--color-primary);
-            margin-bottom: 10px;
-            font-size: 1.3rem;
-        }
-
-        .video-info p {
-            color: #666;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
         .about-content {
             display: flex;
             align-items: center;
@@ -829,7 +787,6 @@
                 <ul>
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#nosotros">Nosotros</a></li>
-                    <li><a href="#videos">Videos</a></li>
                     <li><a href="#productos">Productos</a></li>
                     <li><a href="#promociones">Promociones</a></li>
                     <li><a href="#testimonios">Opiniones</a></li>
@@ -844,43 +801,6 @@
             <h1>Productos que cuidan tu hogar y a los que más querés</h1>
             <p>En Dictum Limpieza y Perfumería ofrecemos productos de limpieza, perfumería y aromatizantes de la más alta calidad para tu hogar y cuidado personal.</p>
             <a href="#productos" class="btn">Ver Productos</a>
-        </div>
-    </section>
-
-    <!-- NUEVA SECCIÓN DE VIDEOS -->
-    <section id="videos">
-        <div class="container">
-            <div class="section-title">
-                <h2>Conocé Nuestra Empresa</h2>
-            </div>
-            
-            <!-- Video de presentación -->
-            <div class="videos-section">
-                <div class="video-container">
-                    <video controls poster="logo-favicon.png">
-                        <source src="Dictum Limpieza y Perfumeria 5 video.mp4" type="video/mp4">
-                        Tu navegador no soporta el elemento de video.
-                    </video>
-                </div>
-                <div class="video-info">
-                    <h3>Presentación de Dictum Limpieza y Perfumería</h3>
-                    <p>Conocé más sobre nuestros productos de limpieza y perfumería de calidad para tu hogar.</p>
-                </div>
-            </div>
-            
-            <!-- Video del local -->
-            <div class="videos-section">
-                <div class="video-container">
-                    <video controls poster="logo-favicon.png">
-                        <source src="Podes encontrarnos en Av. Gdor Dr. Emilio Molina 112 lunes a sabados de 9 - 30 a 14 - 00 y por la tar.mp4" type="video/mp4">
-                        Tu navegador no soporta el elemento de video.
-                    </video>
-                </div>
-                <div class="video-info">
-                    <h3>Visita Nuestro Local</h3>
-                    <p>Conocé nuestro local en Av. Gdor. Dr. Emilio Molina 112. Te esperamos de lunes a sábados de 9:30 a 14:00.</p>
-                </div>
-            </div>
         </div>
     </section>
 
@@ -905,7 +825,6 @@
         </div>
     </section>
 
-    <!-- El resto del código se mantiene igual -->
     <section id="productos">
         <div class="container">
             <div class="section-title">
@@ -954,8 +873,668 @@
                     </div>
                 </div>
                 
-                <!-- ... (todos los demás productos se mantienen igual) ... -->
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Jabones</span>
+                        <h3 class="product-name">Jabón líquido con suavizante ALA</h3>
+                        <p class="product-description">Jabón líquido con suavizante incorporado.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Jabón%20líquido%20con%20suavizante%20ALA" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
                 
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Jabones</span>
+                        <h3 class="product-name">Jabón en polvo Granby</h3>
+                        <p class="product-description">Jabón en polvo tradicional.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Jabón%20en%20polvo%20Granby" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Jabones</span>
+                        <h3 class="product-name">Jabón en polvo Ala</h3>
+                        <p class="product-description">Jabón en polvo de calidad premium.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Jabón%20en%20polvo%20Ala" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PRODUCTOS DE ROPA - SUAVIZANTES -->
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Suavizantes</span>
+                        <h3 class="product-name">Suavizante Celeste</h3>
+                        <p class="product-description">Suavizante con fragancia fresca.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Suavizante%20Celeste" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Suavizantes</span>
+                        <h3 class="product-name">Suavizante Amarillo</h3>
+                        <p class="product-description">Suavizante con aroma intenso.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Suavizante%20Amarillo" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Suavizantes</span>
+                        <h3 class="product-name">Suavizante Rosado</h3>
+                        <p class="product-description">Suavizante con fragancia floral.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Suavizante%20Rosado" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Suavizantes</span>
+                        <h3 class="product-name">Suavizante Borita</h3>
+                        <p class="product-description">Suavizante tradicional de calidad.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Suavizante%20Borita" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PRODUCTOS DE ROPA - LAVANDINAS Y CAMELLITO -->
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-palette"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Lavandinas</span>
+                        <h3 class="product-name">Lavandina ropa color</h3>
+                        <p class="product-description">Lavandina especial para ropa de color.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20la%20Lavandina%20ropa%20color" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-palette"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa - Lavandinas</span>
+                        <h3 class="product-name">Lavandina ropa blanca</h3>
+                        <p class="product-description">Lavandina para ropa blanca.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20la%20Lavandina%20ropa%20blanca" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="ropa">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-cloud"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Ropa</span>
+                        <h3 class="product-name">Camellito</h3>
+                        <p class="product-description">Producto para suavizar y perfumar la ropa.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Camellito" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- LIMPIEZA DEL HOGAR -->
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Lavandina</h3>
+                        <p class="product-description">Lavandina concentrada para desinfección.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20la%20Lavandina" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Cloro</h3>
+                        <p class="product-description">Cloro para limpieza y desinfección.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Cloro" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PERFUMES PARA PISO -->
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Perfume para piso Softy</h3>
+                        <p class="product-description">Perfume para pisos con fragancia suave.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Perfume%20para%20piso%20Softy" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Perfume para piso Pino</h3>
+                        <p class="product-description">Perfume para pisos con aroma a pino.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Perfume%20para%20piso%20Pino" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Perfume para piso Lavanda</h3>
+                        <p class="product-description">Perfume para pisos con fragancia lavanda.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Perfume%20para%20piso%20Lavanda" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Perfume para piso Lysoform</h3>
+                        <p class="product-description">Perfume para pisos con desinfectante.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Perfume%20para%20piso%20Lysoform" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-spray-can"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Perfume para piso Citronella</h3>
+                        <p class="product-description">Perfume para pisos con aroma cítrico.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Perfume%20para%20piso%20Citronella" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- OTROS PRODUCTOS DE LIMPIEZA -->
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-bug"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Veneno</h3>
+                        <p class="product-description">Insecticida para control de plagas.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Veneno" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-broom"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Creolina</h3>
+                        <p class="product-description">Desinfectante y desodorante ambiental.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20la%20Creolina" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-broom"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Lampazo Base Gasoil</h3>
+                        <p class="product-description">Lampazo de calidad profesional.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Lampazo%20Base%20Gasoil" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-broom"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Lampazo Siliconado</h3>
+                        <p class="product-description">Lampazo con tratamiento siliconado.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Lampazo%20Siliconado" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-window-restore"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Limpia Vidrios</h3>
+                        <p class="product-description">Producto para limpieza de vidrios y superficies.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Limpia%20Vidrios" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Secador</h3>
+                        <p class="product-description">Secador de piso de calidad.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Secador" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-broom"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Escoba</h3>
+                        <p class="product-description">Escoba para limpieza general.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20la%20Escoba" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-broom"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Cabo</h3>
+                        <p class="product-description">Cabos para herramientas de limpieza.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Cabo" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Trapos</h3>
+                        <p class="product-description">Trapos de limpieza de diferentes tipos.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20los%20Trapos" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tshirt"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Paños</h3>
+                        <p class="product-description">Paños de microfibra para limpieza.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20los%20Paños" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-soap"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Detergente</h3>
+                        <p class="product-description">Detergente para vajilla y limpieza.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Detergente" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-soap"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Desengrasante</h3>
+                        <p class="product-description">Desengrasante potente para cocina.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Desengrasante" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-toilet-paper"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Papel Servilleta</h3>
+                        <p class="product-description">Servilletas de papel de diferentes tamaños.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Papel%20Servilleta" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-toilet-paper"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Papel Higienico</h3>
+                        <p class="product-description">Papel higiénico de diferentes calidades.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Papel%20Higienico" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-paperclip"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Broches</h3>
+                        <p class="product-description">Broches para tender la ropa.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20los%20Broches" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-pump-soap"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">CIF crema</h3>
+                        <p class="product-description">Crema limpiadora para superficies.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20la%20CIF%20crema" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-faucet"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Quita Sarro</h3>
+                        <p class="product-description">Producto para eliminar sarro en baños y cocinas.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Quita%20Sarro" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="limpieza">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-fire"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Limpieza del Hogar</span>
+                        <h3 class="product-name">Sahumerios</h3>
+                        <p class="product-description">Sahumerios de diferentes aromas.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20los%20Sahumerios" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- HIGIENE PERSONAL -->
+                <div class="product-card" data-category="higiene">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-pump-soap"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Higiene Personal</span>
+                        <h3 class="product-name">Shampoo SEDAL</h3>
+                        <p class="product-description">Shampoo para el cuidado del cabello.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Shampoo%20SEDAL" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="higiene">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-pump-soap"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Higiene Personal</span>
+                        <h3 class="product-name">Acondicionador SEDAL</h3>
+                        <p class="product-description">Acondicionador para cabello suave y manejable.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Acondicionador%20SEDAL" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="higiene">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-tooth"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Higiene Personal</span>
+                        <h3 class="product-name">Pasta dental</h3>
+                        <p class="product-description">Pasta dental de diferentes marcas.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20la%20Pasta%20dental" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PRODUCTOS SAPHIRUS -->
+                <div class="product-card" data-category="saphirus">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Productos Saphirus</span>
+                        <h3 class="product-name">Aromatizante textil AMBAR</h3>
+                        <p class="product-description">Aromatizante para textiles con fragancia ámbar.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Aromatizante%20textil%20AMBAR" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="saphirus">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-wind"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Productos Saphirus</span>
+                        <h3 class="product-name">Aerosol AMBAR</h3>
+                        <p class="product-description">Aerosol ambientador con fragancia ámbar.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20del%20Aerosol%20AMBAR" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="product-card" data-category="saphirus">
+                    <div class="product-image">
+                        <div class="placeholder-icon"><i class="fas fa-fire"></i></div>
+                    </div>
+                    <div class="product-info">
+                        <span class="product-category">Productos Saphirus</span>
+                        <h3 class="product-name">Sahumerios Saphirus</h3>
+                        <p class="product-description">Sahumerios de alta calidad con diferentes aromas.</p>
+                        <div class="product-actions">
+                            <a href="https://wa.me/543834317752?text=Hola,%20me%20interesa%20saber%20el%20precio%20de%20los%20Sahumerios%20Saphirus" class="btn-whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i> Consulte Precio
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -1149,7 +1728,6 @@
                     <ul class="footer-links">
                         <li><a href="#inicio">Inicio</a></li>
                         <li><a href="#nosotros">Nosotros</a></li>
-                        <li><a href="#videos">Videos</a></li>
                         <li><a href="#productos">Productos</a></li>
                         <li><a href="#promociones">Ofertas</a></li>
                     </ul>
